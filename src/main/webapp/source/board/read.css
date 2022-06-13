@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    list-style: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.viewboard {
+    margin-bottom: 0;
+    border-top: 2px solid #222;
+}
+.viewboard,
+.viewboard .viewboard-header {
+    border-bottom: 1px solid #bbb;
+}
+.viewboard .viewboard-header {
+    border-bottom: 1px dashed #999;
+}
+.viewboard .viewboard-header {
+    padding: 20px 15px;
+}
+.viewboard .viewboard-header .viewboard-tit {
+    letter-spacing: -0.05em;
+}
+.viewboard .viewboard-header .viewboard-tit {
+    clear: both;
+    margin-bottom: 5px;
+    color: #222;
+    font-size: 20px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.viewboard .viewboard-header .viewboard-opt {
+    display: inline-block;
+    float: right;
+    padding-top: 0;
+    font-size: 14px;
+}
+.viewboard .viewboard-header .viewboard-opt span {
+    display: inline-block;
+    margin-right: 10px;
+}
+.viewboard .viewboard-header span {
+    position: relative;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0 8px;
+    min-height: 24px;
+}
+a,
+body,
+span {
+    line-height: 1.6;
+}
+.viewboard .viewboard-header span i {
+    display: inline-block;
+    position: relative;
+    color: #555;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0;
+}
+.viewboard .viewboard-file {
+    border-top: none;
+    border-bottom: 1px solid #dedede;
+    padding: 10px 15px;
+}
+.viewboard .viewboard-file {
+    margin: 15px -24px;
+    border-bottom: 1px solid #bbb;
+}
+.viewboard-header + .viewboard-file {
+    margin: 0 !important;
+}
+.viewboard .viewboard-file {
+    position: relative;
+    padding: 14px 16px;
+    background-color: #fafafa;
+}
+.viewboard .viewboard-file .btn-file {
+    margin-top: 5px;
+}
+
+a,
+a:active,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.rdbtn {
+    margin-top: 30px;
+    float: right;
+}
+.viewboard .viewboard-cont {
+    padding: 24px 30px 50px;
+}
+h2,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+style {
+    display: none;
+}

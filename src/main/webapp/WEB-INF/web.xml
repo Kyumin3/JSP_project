@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SamsBike</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+    <filter>
+    <filter-name>SetCharacterEncoding</filter-name>
+    <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>SetCharacterEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+
+  <servlet>
+    <servlet-name>sd</servlet-name>
+    <servlet-class>model.sbike.JoinController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sd</servlet-name>
+    <url-pattern>/sbike/join.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>model.sbike.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/sbike/login.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>model.sbike.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/sbike/logout.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+      <servlet>
+    <servlet-name>Write</servlet-name>
+    <servlet-class>model.sbike.WriteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Write</servlet-name>
+    <url-pattern>/sbike/write.do</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <servlet-name>ReviewBoardView</servlet-name>
+    <servlet-class>model.sbike.ViewBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReviewBoardView</servlet-name>
+    <url-pattern>/sbike/reviewboard.do</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <servlet-name>Read</servlet-name>
+    <servlet-class>model.sbike.ReadController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Read</servlet-name>
+    <url-pattern>/sbike/read.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>Download</servlet-name>
+    <servlet-class>model.sbike.DownloadController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Download</servlet-name>
+    <url-pattern>/sbike/download.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>Check</servlet-name>
+    <servlet-class>model.sbike.CheckController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Check</servlet-name>
+    <url-pattern>/sbike/check.do</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>Edit</servlet-name>
+    <servlet-class>model.sbike.EditController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Edit</servlet-name>
+    <url-pattern>/sbike/edit.do</url-pattern>
+  </servlet-mapping>
+  
+        <servlet>
+    <servlet-name>Delete</servlet-name>
+    <servlet-class>model.sbike.DeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Delete</servlet-name>
+    <url-pattern>/sbike/delete.do</url-pattern>
+  </servlet-mapping>
+  
+
+  
+  
+    <context-param>
+  	<param-name>POSTS_PER_PAGE</param-name>
+  	<param-value>5</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>PAGES_PER_BLOCK</param-name>
+  	<param-value>5</param-value>
+  </context-param>
+  
+    <context-param>
+  	<param-name>maxPostSize</param-name>
+  	<param-value>1024000</param-value>
+  </context-param>
+</web-app>

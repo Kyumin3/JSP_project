@@ -1,0 +1,12 @@
+
+
+CREATE TABLE member01(
+    id VARCHAR2(50) NOT NULL PRIMARY KEY,
+    passwd VARCHAR2(60) NOT NULL,
+    name VARCHAR(20) NOT NULL,
+    reg_date DATE DEFAULT sysdate,
+    address VARCHAR2(100) NOT NULL,
+    tel VARCHAR2(20) NOT NULL
+);
+
+SELECT * FROM member01;
